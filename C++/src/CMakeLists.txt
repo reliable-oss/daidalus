@@ -1,0 +1,108 @@
+#
+# Copyright (c) Reliable Robotics Corporation.
+# All Rights Reserved.
+#
+
+# Set `SOURCES` to the list of all *.cpp files in
+# this directory.
+set(SOURCES
+    ACCoRDConfig.cpp
+    AircraftState.cpp
+    Alerter.cpp
+    AlertThresholds.cpp
+    AziEquiProjection.cpp
+    BandsCore.cpp
+    Bands.cpp
+    BandsHysteresis.cpp
+    BandsMofN.cpp
+    BandsRange.cpp
+    BandsRegion.cpp
+    CD2D.cpp
+    CD3D.cpp
+    CDCylinder.cpp
+    CMakeLists.txt
+    ColorValue.cpp
+    ConflictData.cpp
+    Constants.cpp
+    CriteriaCore.cpp
+    Criteria.cpp
+    CriticalVectors2D.cpp
+    CriticalVectors.cpp
+    DaidalusAltBands.cpp
+    DaidalusCore.cpp
+    Daidalus.cpp
+    DaidalusDirBands.cpp
+    DaidalusFileWalker.cpp
+    DaidalusHsBands.cpp
+    DaidalusIntegerBands.cpp
+    DaidalusParameters.cpp
+    DaidalusRealBands.cpp
+    DaidalusVsBands.cpp
+    DCPAUrgencyStrategy.cpp
+    Detection3D.cpp
+    Detection3DParameterReader.cpp
+    Detection3DParameterWriter.cpp
+    ENUProjection.cpp
+    ErrorLog.cpp
+    FixedAircraftUrgencyStrategy.cpp
+    format.cpp
+    GreatCircle.cpp
+    Horizontal.cpp
+    HysteresisData.cpp
+    IndexLevelT.cpp
+    Integerval.cpp
+    Interval.cpp
+    IntervalSet.cpp
+    Kinematics.cpp
+    KinematicsLatLon.cpp
+    LatLonAlt.cpp
+    LossData.cpp
+    MofN.cpp
+    NavPoint.cpp
+    NoneUrgencyStrategy.cpp
+    OrthographicProjection.cpp
+    ParameterData.cpp
+    ParameterEntry.cpp
+    Point.cpp
+    Position.cpp
+    PositionUtil.cpp
+    ProjectedKinematics.cpp
+    Projection.cpp
+    RecoveryInformation.cpp
+    SeparatedInput.cpp
+    SeparatedOutput.cpp
+    SequenceReader.cpp
+    SimpleNoPolarProjection.cpp
+    SimpleProjection.cpp
+    StateReader.cpp
+    StateVector.cpp
+    string_util.cpp
+    SUMData.cpp
+    TangentLine.cpp
+    TargetUrgency.cpp
+    TCAS2D.cpp
+    TCAS3D.cpp
+    TCASTable.cpp
+    TrafficState.cpp
+    Units.cpp
+    Util.cpp
+    Vect2.cpp
+    Vect3.cpp
+    VectFuns.cpp
+    Velocity.cpp
+    Vertical.cpp
+    WCV_HZ.cpp
+    WCVTable.cpp
+    WCV_TAUMOD.cpp
+    WCV_TAUMOD_SUM.cpp
+    WCV_TCOA.cpp
+    WCV_TCPA.cpp
+    WCV_TEP.cpp
+    WCV_tvar.cpp
+    WCV_VMOD.cpp
+)
+
+# Create a static library from these source files.
+add_library(Daidalus STATIC
+    ${SOURCES}
+)
